@@ -5,7 +5,7 @@ type Props = {
 }
 
 
-export const AddCategory = ( {setCategories }: Props) => {
+export const AddCategoryToChild = ( {setCategories }: Props) => {
 
     const [inputValue, setInputValue] = useState('');
 
