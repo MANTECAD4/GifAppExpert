@@ -4,6 +4,12 @@ export interface Giphy {
     pagination: Pagination;
 }
 
+export type Gif = {
+    id:      string;
+    title:   string;
+    url:     string;
+}
+
 export interface Datum {
     type:                       string;
     id:                         string;
