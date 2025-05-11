@@ -3,7 +3,7 @@ type Props = Gif & {
 
 }
 
-export const GifItem = ( { title, id, url }:Props ) => {
+export const GifItem = ( { title, url }:Props ) => {
   return (
     <div className="bg-white m-2 rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer p-2 max-w-xs">
       <img

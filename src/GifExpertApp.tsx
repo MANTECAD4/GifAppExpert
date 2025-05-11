@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { AddCategoryToChild } from "./components/AddCategory/AddCategoryToChild";
-import { AddCategoryToFather } from "./components/AddCategory/AddCategoryToFather";
-import { GifGrid } from "./GifGrid";
+import { AddCategoryToFather,
+         GifGrid } from "./components/index.ts";
+
 
 export const GifExpertApp = () => {
 
@@ -18,7 +18,7 @@ export const GifExpertApp = () => {
 
     return (
       <>
-        <h1>GifExpertApp</h1>
+        <h1>GifExpertApp de Ñañel</h1>
         {/* <AddCategoryToChild setCategories = {setCategories} /> */}
         <AddCategoryToFather onNewCategory = { onAddCategory }/>
 
