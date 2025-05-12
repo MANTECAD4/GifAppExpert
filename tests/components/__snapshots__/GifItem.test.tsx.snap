@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on "GifItem.tsx" component The component must match a snapshot 1`] = `
+<div>
+  <div
+    class="bg-white m-2 rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer p-2 max-w-xs"
+  >
+    <img
+      alt="Cat Kittens GIF"
+      class="w-full h-auto rounded-xl"
+      src="https://media4.giphy.com/media/v1.Y2lkPTFlMWVjMTVlN2poenVlNmpkdDFkYnA0bTE3MTRmY2k2aXhsMmtzbzl6cmtlZzlvMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wAmQh1YWjhGms/200.gif"
+    />
+    <p
+      class="mt-2 text-center text-sm font-semibold text-gray-700"
+    >
+      Cat Kittens GIF
+    </p>
+  </div>
+</div>
+`;

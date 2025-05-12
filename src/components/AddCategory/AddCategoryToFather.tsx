@@ -1,8 +1,7 @@
 import { useState } from "react"
 
 type Props = {
-    setCategories?: React.Dispatch<React.SetStateAction<string[]>>,
-    onNewCategory:Function // 
+     onNewCategory:Function // 
 }
 
 
@@ -17,14 +16,14 @@ export const AddCategoryToFather = ( { onNewCategory }:Props) => {
     const onSubmit = ( event: React.FormEvent<HTMLFormElement>  ) => {
         event.preventDefault();
         const cleanedInput = inputValue.trim()
-        if (cleanedInput.length <= 1) return;
+        if (cleanedInput.length < 1) return;
         onNewCategory(cleanedInput);
         setInputValue('');
     }
 
     return (
         <>
-            <form onSubmit={ onSubmit  }>
+            <form onSubmit={ onSubmit  } aria-label="form">
                 <input
                     type="text"
                     placeholder="Search gifs"

@@ -1,4 +1,4 @@
-import type { Giphy } from '../models/Giphy';
+import type { Giphy, Gif } from '../models/Giphy';
 
 export const getGifs =  async ( category:string ) => {
 
@@ -8,7 +8,7 @@ export const getGifs =  async ( category:string ) => {
     const resp = await fetch(`${url}?api_key=${api_key}&q=${category}&limit=${limit}`);
     const { data }:Giphy = await resp.json();
 
-    const gifs = data.map( img =>  ({
+    const gifs:Gif[] = data.map( img =>  ({
             id:img.id,
             title:img.title,
             url: img.images.fixed_height.url
