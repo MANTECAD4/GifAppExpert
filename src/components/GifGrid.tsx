@@ -10,7 +10,6 @@ type Props = {
 export const GifGrid =  ( { category }:Props ) => {
 
     const {gifs, isLoading} = useFetchGifs( category );
-    console.log(isLoading);
 
     return (
         <>
@@ -19,7 +18,7 @@ export const GifGrid =  ( { category }:Props ) => {
                 // isLoading 
                 // ? (<h2>Cargando</h2>)
                 // : (null)
-                isLoading && (<h2>Cargando...</h2>)
+                isLoading && (<p>Loading...</p>)
 
             }
             <div className="card-grid">
